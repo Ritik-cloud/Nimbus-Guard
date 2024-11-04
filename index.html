@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus Guard</title>
+    <!-- Google Fonts link For Icons-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="logo">
+                <h2>Nimbus Guard</h2>
+            </a>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+    <!--Popup Form-->
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome</h2>
+                <p>Please log in using personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password">
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forget-pass">Forgot Password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="buttom-link">
+                    Don't have an account?
+                    <a href="#"  id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create account</h2>
+                <p>To become a part of our website, please signup using your personal information</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text">
+                        <label>Enter your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password">
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms and Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit">Signup</button>
+                </form>
+                <div class="buttom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
